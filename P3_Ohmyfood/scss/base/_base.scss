@@ -1,0 +1,79 @@
+// Base CSS html
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @include font-face(Roboto);
+  @include flex(column, space-between, stretch);
+  width: 100%;
+  margin:0;
+  padding: 0;  
+  min-height: 100vh;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style-position: inside;
+  list-style: none;
+  counter-reset: li;
+  padding:0;
+  margin:0;
+}
+
+h1 {
+  @include font-face(Shrikhand, 500, 1.7rem);
+  margin-top:0;
+
+  &.home-title {
+    font-family: inherit;
+  }
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: calc-space(3);
+}
+
+.container {
+  position:relative;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px calc-space(5);
+  max-width: $screen-lg;
+
+  &--flexrow {
+    @include flex(row);
+  }
+
+  &--flexcol {
+    @include flex(column);
+  }
+
+  &--xl {
+    width: 100%;
+    max-width: $screen-xl;
+    margin:0 auto;
+    padding: calc-space(4) calc-space(6);
+  }
+}
+
+.hide {
+  display:none!important;
+}
+
+.bg {
+  &--grey {
+    background-color: $background-grey;
+  }
+  &--greylight {
+    background-color: $background-greylight;
+  }
+  &--greydark {
+    background-color: $background-greydark;
+  }
+}

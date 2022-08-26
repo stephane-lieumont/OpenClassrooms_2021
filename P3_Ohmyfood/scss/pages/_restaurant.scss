@@ -1,0 +1,53 @@
+// section restaurant menu
+#restaurant {
+  position: relative;
+  padding-top: 250px;
+  &__cover {
+    @include absolute();
+    min-height:270px;
+    max-height: 350px;
+    height: 30vw;
+    width: 100%;
+    img {
+      width: 100%;
+      height:100%;
+      object-fit: cover;
+    }
+  }
+  h2 {
+    text-align: left;
+  }
+}
+
+// section form select dishes
+#form-restaurant {
+  border-radius: $border-radius $border-radius 0 0;
+  background: $background-greylight;
+  box-shadow: $shadow-box;
+  font-size: 0.95rem;
+  padding-bottom: calc-space(8);
+  z-index: 2;
+  &__submit {
+    margin: 0 auto;
+  }
+  &__title {
+    @include flex(row, space-between, start, nowrap);
+    width: 100%;
+  }
+  section {
+    width: 100%;
+  }
+  h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    &::after {
+      content: "";
+      display: block;
+      margin-top: 5px;
+      margin-bottom: calc-space(2);
+      width: 40px;
+      border-bottom: 3px solid $background-success;
+    }
+  }
+}

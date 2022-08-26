@@ -1,0 +1,5 @@
+// Layout main CSS
+main {
+  @include flex(column, center, stretch, nowrap);
+  overflow: hidden;
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Choississez parmis les meilleurs plats des restaurants de paris !">
+  <meta name="copyright" content="© ohmyfood.com" />
+  <meta name="robots" content="none" />
+  <meta name="author" content="Stéphane Lieumont">
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/fontawesome/css/all.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
+  <title>Accueil | Ohmyfood</title>
+</head>
+
+<body>
+  <div class="loader">
+    <div class="loader__container container--flexcol">
+      <svg class="loader__item loader__item--1" width="200" height="40"><use xlink:href="./images/logo/ohmyfood@2x.svg#svg-logo"></use></svg>
+      <svg class="loader__item loader__item--2" width="100" height="100"><use xlink:href="./images/logo/loader-logo.svg#loader"></use></svg>      
+      <div class="loader__item loader__item--3">
+        <svg class="loader__item__spinner" width="70" height="70"><use xlink:href="./images/icon/spinner.svg#spinner"></use></svg>
+      </div>      
+    </div>
+  </div>
+  <header>
+    <div class="container container--flexrow">
+      <a class="btn btn--icon hide" href="/">Retour<i class="material-icons-outlined">arrow_back</i></a>
+      <a id="main-logo" href="/"><img width="160" srcset="./images/logo/ohmyfood.png, ./images/logo/ohmyfood@2x.svg 2x" src="./images/logo/ohmyfood@2x.svg" alt="logo ohmyfood"></a>
+    </div>
+  </header>
+  <main id="accueil">
+    <section id="section-local" class="bg--grey">
+      <div class="container">
+        <h4 class="prepend__icon--local"><i class="material-icons">location_on</i>Paris, Belleville</h4>
+      </div>
+    </section>
+    <section id="section-cta" class="bg--greylight">
+      <div class="container">
+        <h1 class="home-title">Réservez le menu qui vous convient</h1>
+        <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+        <a href="#section-restaurants" class="btn">Explorer nos restaurants</a>
+      </div>
+    </section>
+    <section id="section-features">
+      <div class="container">
+        <h2>Fonctionnement</h2>
+        <ol class="features-list">
+          <li class="features-list__item"><i class="material-icons">phone_iphone</i>Choisissez un restaurant</li>
+          <li class="features-list__item"><i class="material-icons">format_list_bulleted</i>Composez votre menu</li>
+          <li class="features-list__item"><i class="material-icons">storefront</i>Dégustez au restaurant</li>
+        </ol>
+      </div>
+    </section>
+    <section id="section-restaurants" class="bg--greylight">
+      <div class="container">
+        <h2>Restaurants</h2>
+        <ul class="list-cards">
+          <li class="card card--new">
+            <div class="card__cover">
+              <a href="./menus/la-palette-du-gout.html">
+                <img width="400" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
+              </a>
+            </div>
+            <div class="card__content">
+              <a class="card__infos" href="./menus/la-palette-du-gout.html">
+                <h3>La palette du goût</h3>
+                <p>Ménilmontant</p>
+              </a>
+              <div class="favorite">
+                <input type="checkbox" name="favorite" value="false">
+                <div class="favorite__bg">
+                  <i class="favorite__bg__border material-icons">favorite_border</i>
+                  <svg class="favorite__bg__icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px">
+                    <defs>
+                      <!-- DEFINE GRADIENT HEART SVG -->
+                      <linearGradient id="gradient">
+                          <stop offset="5%"  class="gradient-start"/>
+                          <stop offset="95%" class="gradient-end"/>
+                      </linearGradient>
+                      <!-- DEFINE GRADIENT HEART SVG -->
+                    </defs>
+                    <path d="M0 0h24v24H0V0z" fill="none"/>
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="url(#gradient)"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="card card--new">
+            <div class="card__cover">
+              <a href="./menus/la-note-enchantee.html">
+                <img width="400" src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
+              </a>
+            </div>
+            <div class="card__content">
+              <a class="card__infos" href="./menus/la-note-enchantee.html">
+                <h3>La note enchantée</h3>
+                <p>Charonne</p>
+              </a>
+              <div class="favorite">
+                <input type="checkbox" name="favorite" value="false">
+                <div class="favorite__bg">
+                  <i class="favorite__bg__border material-icons">favorite_border</i>
+                  <svg class="favorite__bg__icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px">
+                    <path d="M0 0h24v24H0V0z" fill="none"/>
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="url(#gradient)"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__cover">
+              <a href="./menus/a-la-française.html">
+                <img width="400" src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
+              </a>
+            </div>
+            <div class="card__content">
+              <a class="card__infos" href="./menus/a-la-française.html">
+                <h3>À la française</h3>
+                <p>Cité Rouge</p>
+              </a>
+              <div class="favorite">
+                <input type="checkbox" name="favorite" value="false">
+                <div class="favorite__bg">
+                  <i class="favorite__bg__border material-icons">favorite_border</i>
+                  <svg class="favorite__bg__icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px">
+                    <path d="M0 0h24v24H0V0z" fill="none"/>
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="url(#gradient)"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__cover">
+              <a href="./menus/le-delice-des-sens.html">
+                <img width="400" src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
+              </a>
+            </div>
+            <div class="card__content">
+              <a class="card__infos" href="./menus/le-delice-des-sens.html">
+                <h3>Le délice des sens</h3>
+                <p>Folie-Méricourt</p>
+              </a>
+              <div class="favorite">
+                <input type="checkbox" name="favorite" value="false">
+                <div class="favorite__bg">
+                  <i class="favorite__bg__border material-icons">favorite_border</i>
+                  <svg class="favorite__bg__icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px">
+                    <path d="M0 0h24v24H0V0z" fill="none"/>
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="url(#gradient)"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="bg--greydark">
+    <div class="container">
+      <ul>
+        <li class="foot-title">
+          <svg height="20" width="100"><use xlink:href="./images/logo/ohmyfood@2x.svg#svg-logo" width="100%" height="100%"></use></svg>
+        </li>
+        <li><a href="#"><i class="material-icons">restaurant</i>Proposer un restaurant</a></li>
+        <li><a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a></li>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="mailto:stephane1920@gmail.com">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>

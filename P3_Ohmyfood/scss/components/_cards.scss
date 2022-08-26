@@ -1,0 +1,79 @@
+// list card restaurant home page application
+.list-cards {
+  @include flex(row, space-between, center, wrap);
+  gap: calc-space(4);
+  margin-bottom: calc-space(2);   
+
+  .card {
+    position: relative;
+    @include flex(column, flex-start, stretch, nowrap);
+    flex: 1 1 40%;
+    width: 40%;
+    min-width: $card-min-width;
+    max-width: $card-max-width;
+    max-height: $card-max-height;
+    box-shadow: $shadow-items;
+    border-radius: $border-radius;
+    height: $card-max-height;
+    overflow: hidden;
+    transition: background-color .2s ease-in-out, transform .15s ease-in-out;
+
+    a {
+      color:inherit!important;
+    }
+
+    &:hover {
+      background-color: lighten($primary, 35%);
+      transform:scale(1.02);
+      color:darken($primary, 20%);
+    }
+    
+    &__cover{
+      overflow: hidden;
+      width: 100%;
+
+      a {
+        display: block;
+        height: 100%;
+      }
+
+      img {
+        width: 100%;        
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  
+    &__content {
+      flex:0 0 auto;
+      padding:calc-space(1) calc-space(1.5);
+      @include flex(row, space-between, center, nowrap);
+ 
+      h3, p{
+        margin-top:0;
+        margin-bottom: 5px;
+      }
+    }
+
+    &__infos {
+      display: block;
+      flex:1 1 auto;
+    }
+  
+    &--new {
+      &::after {
+        position: absolute;
+        top:calc-space(2);
+        right: calc-space(2);
+        content:"Nouveau";
+        font-weight: 500;
+        font-size: 0.8rem;
+        background-color:$background-success;
+        padding:5px 10px;
+        border-radius: 2px;
+        box-shadow: $shadow-items;
+        color:$success;
+      }
+    }
+  }
+}

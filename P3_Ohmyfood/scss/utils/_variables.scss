@@ -1,0 +1,23 @@
+/* SPACES REFERENCES */
+$base-spacing:10px;
+
+/* RESPONSIVES BREAKPOINTS */
+$screen-xl:1200px;
+$screen-lg:1024px;
+$screen-md:992px;
+$screen-sm:768px;
+
+/* CSS REFERENCES */
+$border-radius: 20px;
+
+/* CSS COMPONENT */
+$card-max-height: 250px;
+$card-min-width: 270px;
+$card-max-width: 500px;
+
+/* CSS ANIMATIONS */
+$anim-loader-dur: 1000ms;
+$anim-rotate-spinner: 700ms;
+$anim-fadein-dur: calc($anim-loader-dur/2);
+$anim-fadein-delay: calc($anim-fadein-dur/6);
+$anim-dish-show-dur: 500ms;

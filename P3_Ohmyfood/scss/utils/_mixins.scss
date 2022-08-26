@@ -1,0 +1,23 @@
+// compile mixins font properties
+@mixin font-face($font-name, $weight: normal, $size: 1rem) {
+  font-family: quote($font-name) , sans-serif;
+  font-weight: $weight;
+  font-size: $size;
+}
+
+// compile mixins flex properties
+@mixin flex($direction: row, $justify: center, $align: center, $warp: nowrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $warp; 
+}
+
+// compile mixins position absolute properties
+@mixin absolute($top: 0, $left:0, $z: 1) {
+  position: absolute;
+  top:$top;
+  left:$left;
+  z-index: $z;
+}

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/P14_HRnet/static/css/main.39dceb8a.css",
+    "main.js": "/P14_HRnet/static/js/main.b6f0a194.js",
+    "static/media/logo-wealth-health.png": "/P14_HRnet/static/media/logo-wealth-health.40d40b06ab2020506da1.png",
+    "index.html": "/P14_HRnet/index.html",
+    "main.39dceb8a.css.map": "/P14_HRnet/static/css/main.39dceb8a.css.map",
+    "main.b6f0a194.js.map": "/P14_HRnet/static/js/main.b6f0a194.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.39dceb8a.css",
+    "static/js/main.b6f0a194.js"
+  ]
+}

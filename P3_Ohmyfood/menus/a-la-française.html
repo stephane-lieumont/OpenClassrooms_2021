@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A la française | Commander votre menu et faites vous livré !">
+  <meta name="copyright" content="© ohmyfood.com" />
+  <meta name="robots" content="none" />
+  <meta name="author" content="Stéphane Lieumont">
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="../css/fontawesome/css/all.css">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
+  <title>A la francaise | Ohmyfood</title>
+</head>
+
+<body>
+  <header>
+    <div class="container container--flexrow">
+      <a class="btn btn--icon" href="../index.html">Retour<i class="material-icons-outlined">arrow_back</i></a>
+      <div id="main-logo"><img width="160" srcset="../images/logo/ohmyfood.png, ../images/logo/ohmyfood@2x.svg 2x" src="../images/logo/ohmyfood@2x.svg" alt="logo ohmyfood"></div>
+    </div>
+  </header>
+  <main id="restaurant">
+    <div id="restaurant__cover">
+      <img src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
+    </div>
+    <form id="form-restaurant" class="container--xl">
+      <div class=" container--flexcol">
+        <div id="form-restaurant__title">
+          <h1>À la française</h1>
+          <div class="favorite">
+            <input type="checkbox" name="favorite" value="false">
+            <div class="favorite__bg">
+              <i class="favorite__bg__border material-icons">favorite_border</i>
+              <svg class="favorite__bg__icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px">
+              <defs>
+                  <linearGradient id="gradient">
+                      <stop offset="5%"  class="gradient-start"/>
+                      <stop offset="95%" class="gradient-end"/>
+                  </linearGradient>
+              </defs>
+              <path d="M0 0h24v24H0V0z" fill="none"/>
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="url(#gradient)"/>
+            </svg>
+            </div>
+          </div>
+        </div>
+        <section id="starter">
+          <h2>Entrées</h2>
+          <ul class="dishes-list">
+            <li class="dish dish--1">
+              <div class="dish__desc">
+                <h3>Tartare de poule acidulé</h3>
+                <p>Aux zestes d'orange</p>
+              </div>
+              <div class="dish__select">
+                <p>25€</p>
+                <div class="dish__select__checkbox">
+                  <input type="radio" name="starter" value="starter1">
+                </div>
+              </div>
+            </li>
+            <li class="dish dish--2">
+              <div class="dish__desc">
+                <h3>Velouté de légumes d'antan</h3>
+                <p>Carotte, panais, topinambour</p>
+              </div>
+              <div class="dish__select">
+                <p>35€</p>
+                <div class="dish__select__checkbox">
+                  <input type="radio" name="starter" value="starter2">
+                </div>
+              </div>
+            </li>
+            <li class="dish dish--3">
+              <div class="dish__desc">
+                <h3>Soupe à l'oignon</h3>
+                <p>Revisitée</p>
+              </div>
+              <div class="dish__select">
+                <p>20€</p>
+                <div class="dish__select__checkbox">
+                  <input type="radio" name="starter" value="starter3">
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section id="dishes">
+          <h2>Plats</h2>
+          <ul class="dishes-list">
+            <li class="dish dish--4">
+              <div class="dish__desc">
+                <h3>Coquilles Saint-Jacques</h3>
+                <p>Accompagnées d'une purée de panais</p>
+              </div>
+              <div class="dish__select">
+                <p>40€</p>
+                <div class="dish__select__checkbox">
+                  <input type="radio" name="dish" value="dish1">
+                </div>
+              </div>
+            </li>
+            <li class="dish dish--5">
+              <div class="dish__desc">
+                <h3>Magret de canard</h3>
+                <p>Et parmentier de pommes de terre</p>
+              </div>
+              <div class="dish__select">
+                <p>35€</p>
+                <div class="dish__select__checkbox">
+                  <input type="radio" name="dish" value="dish2">
+                </div>
+              </div>
+            </li>
+            <li class="dish dish--6">
+              <div class="dish__desc">
+                <h3>Pigeonneau d’Ille-et-Vilaine</h3>
+                <p>Sur son lit de gnocchis aux légumes</p>
+              </div>
+              <div class="dish__select">
+                <p>44€</p>
+                <div class="dish__select__checkbox">
+                  <input type="radio" name="dish" value="dish3">
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section id="dessert">
+          <h2>Desserts</h2>
+          <ul class="dishes-list">
+            <li class="dish dish--7">
+              <div class="dish__desc">
+                <h3>Pétales de violettes glacés</h3>
+                <p>Et purée de noisettes</p>
+              </div>
+              <div class="dish__select">
+                <p>18€</p>
+                <div class="dish__select__checkbox">
+                  <input type="radio" name="dessert" value="dessert1">
+                </div>
+              </div>
+            </li>
+            <li class="dish dish--8">
+              <div class="dish__desc">
+                <h3>Fondant au chocolat</h3>
+                <p>Revisité</p>
+              </div>
+              <div class="dish__select">
+                <p>22€</p>
+                <div class="dish__select__checkbox">
+                  <input type="radio" name="dessert" value="dessert2">
+                </div>
+              </div>
+            </li>
+            <li class="dish dish--9">
+              <div class="dish__desc">
+                <h3>Millefeuille croustillant</h3>
+                <p>Myrtilles et pâte d’amande</p>
+              </div>
+              <div class="dish__select">
+                <p>23€</p>
+                <div class="dish__select__checkbox">
+                  <input type="radio" name="dessert" value="dessert3">
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <div id="form-restaurant__submit">
+          <button type="submit" class="btn">Commander</button>
+        </div>
+      </div>
+    </form>
+  </main>
+  <footer class="bg--greydark">
+    <div class="container">
+      <ul>
+        <li class="foot-title">
+          <svg height="20" width="100"><use xlink:href="../images/logo/ohmyfood@2x.svg#svg-logo" width="100%" height="100%"></use></svg>
+        </li>
+        <li><a href="#"><i class="material-icons">restaurant</i>Proposer un restaurant</a></li>
+        <li><a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a></li>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="mailto:stephane1920@gmail.com">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>

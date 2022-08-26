@@ -1,0 +1,67 @@
+// features step on home page application
+.features-list {
+  @include flex(row, space-between, stretch, nowrap);
+  padding-top:0;
+  padding-bottom: calc-space(2);
+  padding-left: calc-space(1);
+  padding-right: calc-space(1);
+  gap: calc-space(4);  
+
+  &__item {
+    @include flex(row, flex-start, stretch, nowrap);
+    position: relative;
+    column-gap: calc-space(2);
+    width: 100%;
+    max-width: 550px;  
+    padding: calc-space(2) calc-space(4);
+    font-size: 0.85rem;
+    line-height: 25px;
+    font-weight: 600;
+    white-space: nowrap;
+    background-color: $background-greylight;
+    border-radius: $border-radius;
+    box-shadow: $shadow-items;
+    counter-increment: li;
+    transition: all 1s ease-in-out;
+    cursor: default;
+
+    &:hover {
+      > i {
+        color:$primary!important;
+      }
+
+      &::before {
+        opacity: .1;
+      }
+    }
+
+    i {
+      color:grey;
+    }
+
+    &::before {
+      @include absolute();
+      content:"";
+      border-radius: $border-radius;      
+      background-color: $primary;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: opacity .2s ease-in-out;
+    }
+
+    &::after {
+      @include absolute(inherit, 0);
+      height:25px;
+      width: 25px;
+      line-height: 25px;
+      font-size: 13px;
+      color:white;
+      border-radius: 50%;
+      text-align: center;
+      background-color: $primary;
+      content: counter(li);
+      transform: translateX(-10px);
+    }
+  }
+}

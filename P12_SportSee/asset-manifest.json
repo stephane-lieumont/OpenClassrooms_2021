@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/P12_SportSee/static/css/main.73be8152.css",
+    "main.js": "/P12_SportSee/static/js/main.b13f935c.js",
+    "static/media/logo.svg": "/P12_SportSee/static/media/logo.6b98dd99481b721d6d30fc84f9b0ff26.svg",
+    "static/media/swimming.svg": "/P12_SportSee/static/media/swimming.b18477460c84b3f5bed7.svg",
+    "static/media/cycling.svg": "/P12_SportSee/static/media/cycling.bafe49e6fda11005d281.svg",
+    "static/media/apple.svg": "/P12_SportSee/static/media/apple.635d4b8bb7d8f64408ef3032c93ec526.svg",
+    "index.html": "/P12_SportSee/index.html",
+    "static/media/chicken.svg": "/P12_SportSee/static/media/chicken.75051c1665b940bb3dc5f760ba41ff60.svg",
+    "static/media/relaxation.svg": "/P12_SportSee/static/media/relaxation.902174480ad3248d93f0.svg",
+    "static/media/cheeseburger.svg": "/P12_SportSee/static/media/cheeseburger.27ce32674148dab385abc4be5a4fcec6.svg",
+    "static/media/fire.svg": "/P12_SportSee/static/media/fire.b8c276e93e1df6b1691a9b5fe7fc5450.svg",
+    "static/media/weight.svg": "/P12_SportSee/static/media/weight.4fd7249abf4f773b92a2.svg",
+    "main.73be8152.css.map": "/P12_SportSee/static/css/main.73be8152.css.map",
+    "main.b13f935c.js.map": "/P12_SportSee/static/js/main.b13f935c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.73be8152.css",
+    "static/js/main.b13f935c.js"
+  ]
+}

@@ -1,0 +1,65 @@
+// Breakpoint for tablets
+@media (max-width: $screen-md) {
+  .features-list {
+    @include flex(column);
+
+    &_item {
+      width: auto;
+    }
+  }
+
+  .dishes-list {
+    justify-content: flex-start;
+  }
+
+  .dish {
+    flex:1 1 50%!important;
+    max-width: 48%!important;
+  }
+
+  footer ul {
+    flex-direction:column;
+    gap:5px;
+  }
+}
+
+// Breakpoint for phones
+@media (max-width: $screen-sm) {
+  h2 {
+    text-align: left;
+  }
+
+  .dishes-list {
+    flex-direction: column;
+
+    .dish {
+      flex:1 1 100%!important;
+      max-width: 100%!important;;
+      width: 100%!important;
+    }
+  }
+
+
+  .list-cards {
+    @include flex(column);
+
+    .card {
+      width: 100%;
+    }
+  }
+
+  .features-list, .list-cards {
+    gap: calc-space(2);
+  }
+
+  .container {
+    padding-left: calc-space(2);
+    padding-right: calc-space(2);
+  }
+
+  .container {  
+    &--xl {
+      padding: calc-space(3) calc-space(2);
+    }
+  }
+}

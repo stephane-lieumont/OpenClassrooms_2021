@@ -1,0 +1,36 @@
+// Layout Footer CSS
+footer {
+  padding: calc-space(2) 0;
+  font-size: 0.9rem;
+  color:white;
+
+  a {
+    color: inherit;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  ul {
+    @include flex(row, end, stretch, nowrap);
+    gap:calc-space(3)
+  }
+
+  ul li {
+    padding-bottom:7px;
+  }
+
+  i {
+    font-size: 14px!important;
+    width:25px;
+  }
+
+  .foot-title {
+    flex-grow: 1;
+    margin-bottom: calc-space(1);
+    svg{
+      fill: #ffffff!important;
+    }    
+  }
+}

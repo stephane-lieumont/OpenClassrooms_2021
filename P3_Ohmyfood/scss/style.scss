@@ -1,0 +1,30 @@
+/* variables & mixins SCSS */
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/functions';
+
+/* Theme SCSS */
+@import './themes/colors';
+
+/* global SCSS */
+@import './base/base';
+
+/* Pages SCSS */
+@import './pages/home';
+@import './pages/restaurant';
+
+/* Layout SCSS */
+@import './layout/header';
+@import './layout/main';
+@import './layout/footer';
+
+/* Components SCSS */
+@import './components/features';
+@import './components/buttons';
+@import './components/cards';
+@import './components/dishes';
+@import './components/loader';
+
+/* responsive design */
+@import './layout/responsive';
+

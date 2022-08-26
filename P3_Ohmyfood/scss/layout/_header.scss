@@ -1,0 +1,14 @@
+// Layout header CSS
+header {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+  z-index: 2;
+
+  & .btn {
+    @include absolute(inherit);
+    margin: 0px calc-space(1);
+  }
+
+  #main-logo {
+    padding: calc-space(2) 0;
+  }
+}
